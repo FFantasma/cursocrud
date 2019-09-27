@@ -1,0 +1,9 @@
+#tamanhoContainer {
+  width: 500px;
+}
+
+#botao {
+  background-color: #ff1168; /* cor do fundo */
+  color: #fff; /*cor da letra */
+  font-weight: bold;
+}
