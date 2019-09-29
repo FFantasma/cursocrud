@@ -17,12 +17,12 @@
 		<form action="_inserir_produto.php" method="post" style="margin-top: 20px" >
 			<div class="form-group">
 				<label>Nro Produto</label>
-				<input type="number" class="form-control" name="nroproduto" placeholder="Insira o número do produto" autocomplete="off">
+				<input type="number" class="form-control" name="nroproduto" placeholder="Insira o número do produto" autocomplete="off" required>
 			</div>
 			
 			<div class="form-group">
 				<label>Nome do Produto</label>
-				<input type="text" class="form-control" name=" nomeproduto" placeholder="Insira o nome do produto" autocomplete="off">
+				<input type="text" class="form-control" name="nomeproduto" placeholder="Insira o nome do produto" autocomplete="off" required>
 			</div>
 			
 			<div class="form-group">
@@ -37,7 +37,7 @@
 
 			<div class="form-group">
 				<label>Quantidade</label>
-				<input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto" autocomplete="off">
+				<input type="number" class="form-control" name="quantidade" placeholder="Insira a quantidade do produto" autocomplete="off" required>
 			</div>
 
 			<div class="form-group">
