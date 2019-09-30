@@ -1,11 +1,11 @@
 <?php
 
-$servename = "127.0.0.1"; //padrão - server local
-$database = "curso_estoque"; //alterar conforme o nome do seu banco de dados
+$servename = "localhost"; //padrão - server local
 $username = "root"; //padrão - root
 $password = ""; //senha de conexão do bando de dados
+$database = "curso_estoque"; //alterar conforme o nome do seu banco de dados
 // Create connection
-$conexao = mysqli_connect($servename, $database, $username, $password);
+$conexao = mysqli_connect($servename, $username, $password, $database);
 
 
 
