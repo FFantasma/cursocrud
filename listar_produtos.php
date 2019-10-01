@@ -16,18 +16,39 @@
         <table class="table">
             <thead>
                 <tr>
-                <th scope="col">Nro Produto</th>
-                <th scope="col">Nome Produto</th>
-                <th scope="col">Categoria</th>
-                <th scope="col">Quantidade</th>
-                <th scope="col">Fornecedor</th>
+                    <th scope="col">Nro Produto</th>
+                    <th scope="col">Nome Produto</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Fornecedor</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td></td>
+
+                <?php
+                include 'conexao.php';
+                $sql = "SELECT * FROM `estoque`";
+                $busca = mysqli_query($conexao,$sql);
+
+                while ($array = mysqli_fetch_array($busca)) {
+
+                    $id_estoque = $array['id_estoque'];
+                    $nroproduto = $array['nroproduto'];
+                    $nomeproduto = $array['nomeproduto'];
+                    $categoria = $array['categoria'];
+                    $quantidade = $array['quantidade'];
+                    $fornecedor = $array['fornecedor'];                            
+                    ?>
+
+                <tr>        
+                    <td><?php echo $nroproduto ?></td>
+                    <td><?php echo $nomeproduto ?></td>
+                    <td><?php echo $categoria ?></td>
+                    <td><?php echo $quantidade ?></td>
+                    <td><?php echo $fornecedor ?></td>
                 </tr>
-            </tbody>
+
+        <?php } ?>
+
         </table>
     
     </div>
